@@ -1,18 +1,80 @@
-package C1Challenges.Sprint2;
+package C1Challenges.Sprint3;
 
-public class PizzaOrder {
+import java.util.Random;
+import java.util.Scanner;
+public class PizzaOrderUsingTheMainMethod {
+
+
     public static void main(String[] args) {
+
+        //Task 1
+        int pizza = 1;
+        int GB = 2;
+        int beverage = 3;
+        int menuOption;
+        do {
+            Scanner input = new Scanner(System.in);
+            System.out.println("Sl No   Item Category");
+            System.out.println("---------------------");
+            System.out.println("1) Pizza");
+            System.out.println("2) Garlic Bread");
+            System.out.println("3) Beverages");
+            System.out.println("Enter 1 for Pizza, 2 for Garlic Bread and 3 for Beverages");
+            menuOption = input.nextInt();
+
+            switch (menuOption) {
+                case 1:
+                    System.out.println("You selected pizza");
+
+                    break;
+                case 2:
+                    System.out.println("You selected garlic bread");
+                    break;
+                case 3:
+                    System.out.println("You selected beverages");
+                    break;
+                case 4:
+                    System.out.println("Program terminating");
+                    break;
+                default:
+                    System.out.println("Invalid entry. Try again.");
+                    break;
+            }
+        } while (menuOption != 4);
+    }
+
+}
+
+
+
+
+        //System.out.println("Please enter the number of pizza(s) you want to order :");
+
+
+       /* if (choice == 1){
+            choice = pizza;}
+        else if (choice == 2){
+            choice = GB;}
+        else if (choice == 3){
+            choice = beverage;}
+        else if (choice > 3 || choice < 1)
+        {
+            System.out.println("Invalid operation. Try again.");
+
+        }
+
+
         String customerName = "Gary";
         String customerEmail = "gary@123.com";
         int phoneNo = 412312345;
         String address = "20, Marble Drive,Eville";
         int noOfPizzaOrdered = 5;
-        float pizzaPrice = 12.5F;
+        double pizzaPrice = 12.99;
         char pizzaSize = 'M';
         int noOfGarlicBreadOrdered = 3;
         float garlicBreadPrice = 5.99F;
         int noOfBeveragesOrdered = 3;
-        float beveragePrice = 1.99F;
+        float beveragePrice = 1.99F;}
 
         //Task 2
         float totalPriceOfPizza = noOfPizzaOrdered*pizzaPrice;
@@ -28,7 +90,7 @@ public class PizzaOrder {
         if (totalBill>=100)
             System.out.println(true);
         else
-        System.out.println(false);
+            System.out.println(false);
 
         //Task 4
         System.out.println("-------------------------------");
@@ -57,7 +119,10 @@ public class PizzaOrder {
         System.out.println("Amount to be paid: $" + totalBill*0.9);
         System.out.println("---------------Thank you-----------------------------");
 
+        Scanner customer = new Scanner(System.in);
+        System.out.println("Enter your selection from 1, 2 or 3.");
+        String value = customer.nextLine();
+*/
 
-    }
 
-}
+
